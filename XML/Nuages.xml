@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE nuages SYSTEM "nuage.dtd">
+<nuages>
+    <nuage pluie="non">
+        <nom>Altocumulus</nom>
+        <espèce>lenticularis</espèce>
+        <altitude_min>2000</altitude_min>
+        <altitude_max>6000</altitude_max>
+    </nuage>
+
+    <nuage pluie="non">
+        <nom>cirrocumulus</nom>
+        <espèce>lenticularis</espèce>
+        <altitude_min>5000</altitude_min>
+        <altitude_max>7000</altitude_max>
+    </nuage>
+
+    <nuage pluie="non">
+        <nom>Cirus</nom>
+        <espèce>spissatus</espèce>
+        <altitude_min>6000</altitude_min>
+        <altitude_max>12000</altitude_max>
+    </nuage>
+
+    <nuage pluie="non">
+        <nom>Stratocumulus</nom>
+        <espèce>lenticularis</espèce>
+        <altitude_min>0</altitude_min>
+        <altitude_max>2000</altitude_max>
+    </nuage>
+
+    <nuage pluie="non">
+        <nom>Altocumulus</nom>
+        <espèce>lenticularis</espèce>
+        <altitude_min>2000</altitude_min>
+        <altitude_max>6000</altitude_max>
+    </nuage>
+
+     <nuage pluie="oui">
+        <nom>Cumulonimbus</nom>
+        <espèce>calvus</espèce>
+        <altitude_min>300</altitude_min>
+        <altitude_max>18000</altitude_max>
+    </nuage>
+
+
+</nuages>

@@ -1,0 +1,7 @@
+<!ELEMENT nuages (nuage*)>
+<!ELEMENT nuage (nom,espèce,altitude_min,altitude_max)>
+<!ATTLIST nuage pluie format (oui|non) "non" #REQUIERED>
+<!ELEMENT nuage nom (#PCDATA)>
+<!ELEMENT nuage espèce (#PCDATA)>
+<!ELEMENT nuage altitude_min (#PCDATA)>
+<!ELEMENT nuage altitude_max (#PCDATA)>
