@@ -1,0 +1,6 @@
+<!ELEMENT personnes (personne*) >
+<!ELEMENT personne (nom,prenom) >
+<!ATTLIST personne id ID #REQUIRED>
+<!ATTLIST personne sexe format (F|M) "F" #REQUIRED>
+<!ELEMENT nom (#PCDATA) >
+<!ELEMENT prenom (#PCDATA) >

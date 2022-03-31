@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE personnes SYSTEM "personnes.dtd">
+<personnes>
+    <personne id="1" sexe="F">
+        <nom>Barbut</nom>
+        <prenom>Nicolas</prenom>
+    </personne>
+    <personne id="2" sexe="M">
+        <nom>Barbut></nom>
+        <prenom>Théo</prenom>
+    </personne>
+</personnes>
