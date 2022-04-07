@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cave SYSTEM "bouteilles.dtd">
+<bouteilles>
+    <bouteille>
+        <marque>Cristaline</marque>
+        <composition>
+            <ion type="positif" qte="71" unit="mg/l">calcium</ion>
+            <ion type="positif" qte="5,5" unit="mg/l">magnésium</ion>
+            <ion type="negatif" qte="20" unit="mg/l">chlorure</ion>
+            <ion type="negatif" qte="1" unit="mg/l">nitrate</ion>
+            <autre type="metal">fer</autre>
+        </composition>
+        <source>
+            <ville>St-Cyr la Source</ville>
+            <departement>Loiret</departement>
+        </source>
+        <code_barre>3274080005003</code_barre>
+        <contenance unit="cl">150</contenance>
+        <ph>7,45</ph>
+    </bouteille>
+    <bouteille>
+        <marque>Cristaline</marque>
+        <composition>
+            <ion type="positif" qte="98" unit="mg/l">calcium</ion>
+            <ion type="positif" qte="4" unit="mg/l">magnésium</ion>
+            <ion type="negatif" qte="3,6" unit="mg/l">chlorure</ion>
+            <ion type="negatif" qte="2" unit="mg/l">nitrate</ion>
+        </composition>
+        <source>
+            <ville>Aurèle</ville>
+            <departement>Alpes Maritimes</departement>
+        </source>
+        <code_barre>3268840001008</code_barre>
+        <contenance unit="cl">50</contenance>
+        <ph>7,4</ph>
+    </bouteille>
+    <bouteille>
+        <marque>Volvic</marque>
+        <composition>
+            <ion type="positif" qte="11,5" unit="mg/l">calcium</ion>
+            <ion type="positif" qte="8" qte="2" unit="mg/l">magnésium</ion>
+            <ion type="negatif" qte="13,5" unit="mg/l">chlorure</ion>
+            <ion type="negatif" qte="6,3" unit="mg/l">nitrate</ion>
+        </composition>
+        <source>
+            <ville>Volvic</ville>
+            <departement>Puy-de-Dôme</departement>
+        </source>
+        <code_barre>3057640117008</code_barre>
+        <contenance unit="cl">50</contenance>
+        <ph>7</ph>
+    </bouteille>
+</bouteilles>            
