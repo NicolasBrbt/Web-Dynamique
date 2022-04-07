@@ -1,3 +1,29 @@
+/* un commentaire */
 #para{
     background-color: blue;
+    color: white "";
+    font-size: x-large;
+}
+
+.red {
+    color: red;
+}
+
+h1 {
+font-family: 'Courier New', Courier, monospace;
+}
+p span{
+    color: blueviolet;
+}
+#block1{
+    border: 2px solid blue;
+    float: left;
+}
+#block2{
+    border: 2px solid royalblue;
+    float :right ;
+}
+#block3{
+    border: 2px solid red;
+    clear: both;
 }
