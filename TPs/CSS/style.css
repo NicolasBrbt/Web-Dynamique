@@ -27,3 +27,6 @@ p span{
     border: 2px solid red;
     clear: both;
 }
+img{
+    border:none;   
+}
