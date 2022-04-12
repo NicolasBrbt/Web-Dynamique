@@ -1,100 +1,62 @@
-#wrapper {
-    width: 680px;
-    margin: 0 auto;
-    max-width: 680px;
-    background-color: #ffffcc;
-    color: #003300;
-    padding-left: 10px;
-}
+body { background-color: #003366;
+ color: #003300;
+ font-family: Arial, Helvetica, sans-serif;
+ background-image: url(Images/primevertical.png);
+ }
 
-#leftcolumn {
-    margin-top: 15px;
-    float: left;
-    width: 150px;
+ #wrapper{
+     width: 680px;
+     margin: 0 auto;
+     max-width: 680px;
+     background-color: #ffffcc;
+     color: #003300;
+     padding-left: 10px;
+ }
 
-}
+ #leftcolumn{
+     float: left;
+     width: 150px;
+ }
+ #navigation{
 
-#rightcolumn {
-    margin-left: 150px;
+ }
+ #rightcolumn{
+    margin-left: 150px ;
     padding-left: 20px;
-}
-
-#nav {
-    margin-left: 25px;
-    margin-right: px;
-    
-}
-
-
-.logo {
-    background-color: #ffffcc;
-    color: #48751A;
-}
-
-.contact {
-    font-family: "Times New Roman", serif;
-    font-size: .90em;
-    font-weight: bold;
-}
-
-.labelcol{
-    float: left;
-    width: 100px;
-    text-align: right;
-    padding-right: 10px;
-}
-
-.myRow{
     padding-bottom: 20px;
-}
-.mysubmit{
-    margin: 10px;
-}
+ }
+h2 { background-color:#ffffcc;
+ color:#003366;
+ }
+h3{ background-color:#ffffcc;
+ color:#006600;
+ }
+dd { font-style:italic;
+ font-size:.90em;
+ line-height:200%;
+ }
+.logo { background-color:#ffffcc;
+ color:#48751A;
+ }
+.contact { font-family: "Times New Roman", serif;
+ font-size: .90em;
+ font-weight:bold;
+ }
+#nav { 
+    font-size: .70em;
+ }
+#footer { font-size: .60em;
+ font-style: italic;
+ }
+ .Property{
+     float: left;
+    padding-right:30px ;
+    padding-bottom: 5px;  
+ }
+ img{
+     border: none;
+    
 
-#footer {
-    font-size: .60em;
-    font-style: italic;
-}
-
-.Property {
-    float: left;
-    padding-right: 30px;
-    padding-bottom: 5px;
-}
-
-.home {
-    background-image: url(Images/schaumburg.jpg);
-    background-position: -100px -260px;
-    background-repeat: no-repeat;
-    color: #ffffcc;
-    padding: 60px 5px 20px 5px;
-    width: 200px;
-}
-
-h2 {
-    background-color: #ffffcc;
-    color: #003366;
-}
-
-h3 {
-    background-color: #ffffcc;
-    color: #006600;
-}
-
-dd {
-    font-style: italic;
-    font-size: .90em;
-    line-height: 200%;
-
-}
-
-img {
-    border: none;
-}
-
-body {
-    background-color: #003366;
-    color: #003300;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('Images/primevertical.png');
-}
+ }
+ 
+ 

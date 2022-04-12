@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<title>Ecriture d'une fonction simple</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript">
+		tabNumbers = [-2, 1, 4];
+		function addTwo() {
+			input = document.getElementById("number").value;
+			document.getElementById("result").innerHTML = Number(input) + 2;
+		}
+		function addTwoToTab() {
+			for (index in tabNumbers) {				
+				result = parseInt(tabNumbers[index]) + 2;
+				alert(tabNumbers[index] + " + 2 = " + result);
+			}
+		}
+		function addTwoToFirstAndLastElementTab(){
+			lastElementIndex = tabNumbers.length - 1;
+			firstResult = parseInt(tabNumbers[0]) + 2;
+			alert("Résultat pour le premier élément : " + firstResult);
+			lastResult = parseInt(tabNumbers[lastElementIndex]) + 2;
+			alert("Résultat pour le dernier élément : " + lastResult);
+		}
+		function surface(){			
+			largeur = document.getElementById("largeur").value;
+			longueur = document.getElementById("longueur").value;
+			result = largeur * longueur;
+			alert("Surface : " + result);
+		}
+	</script>
+</head>
+
+<body>
+	<h1>Ecriture d'une fonction simple</h1>
+	<form>
+		<label name="number">Saisir un nombre : </label>
+		<input name="number" id="number" type="number" />
+		<input type="button" onclick="addTwo()" value="Additionner à 2">
+	</form>
+	<h2>Résultat</h2>
+	<div id="result"></div>
+	<h1>Agir sur les éléments d'un tableau</h1>
+	<form>
+		<input type="button" onclick="addTwoToTab()" value="Additionner 2 aux éléments du tableau">
+		<input type="button" onclick="addTwoToFirstAndLastElementTab()" value="Additionner 2 au premier et dernier élément du tableau">
+	</form>
+
+	<h1>Calcul de surface</h1>
+	<form>
+		<label name="largeur">Saisir une largeur : </label>
+		<input name="largeur" id="largeur" type="number" />
+		<label name="longueur">Saisir une longueur : </label>
+		<input name="longueur" id="longueur" type="number" />
+		<input type="button" onclick="surface()" value="Calcul de la surface">
+	</form>
+</body>
+
+</html>
