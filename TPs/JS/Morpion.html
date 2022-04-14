@@ -1,55 +1,55 @@
-<!DOCTYPE HTML> 
-<html> 
-	<head>
-		<title>TP3</title>
-        <link href="Morpion.css" rel="stylesheet" />
-		<script type="text/javascript">
-         function test(){
-            console.log("out");
-             if(document.getElementById("case").onclick==true){
-                 console.log("in");
-                 alert("gogolle");
-             }
-         }   
-          
-          
+<!DOCTYPE HTML>
+<html>
 
-</script>
+<head>
+    <title>TP3</title>
+    <link href="Morpion.css" rel="stylesheet" />
+    
 </head>
+
+
 <body>
-    <div id ="container">
+    
+    <div id="container">
 
         <div id="backGrid">
-            
-                <div>
-                    <input type="button" id="case" name="case1" onclick="test()">
-                    <input type="button" id="case">
-                    <input type="button" id="case">
-                </div>
 
-        <div>
-            <input type="button" id="case">
-            <input type="button" id="case">
-            <input type="button" id="case">
-        </div>
-
-        <div>
-            <input type="button" id="case">
-            <input type="button" id="case">
-            <input type="button" id="case"> 
-        </div>
-                
-                
-        
-            
-
-            
-
+            <div>
+                <button id="test"></button>
+                <script type="text/javascript">
+    
+                    document.getElementById("test").addEventListener("click",test());
+                    function test(){
+                        alert("gogolle");
+                    }
+                </script>
+                <button id="case1"></button>
+                <button id="case1"></button>
             </div>
-        
+
+            <div>
+                <button id="case1"></button>
+                <button id="case1"></button>
+                <button id="case1"></button>
+            </div>
+
+            <div>
+                <button id="case1"></button>
+                <button id="case1"></button>
+                <button id="case1"></button>
+            </div>
+
+
+
+
+
+
+
         </div>
 
     </div>
+
+    
 
 </body>
 
