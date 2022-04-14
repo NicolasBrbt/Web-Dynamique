@@ -4,22 +4,53 @@
 		<title>TP3</title>
         <link href="Morpion.css" rel="stylesheet" />
 		<script type="text/javascript">
+         function test(){
+            console.log("out");
+             if(document.getElementById("case").onclick==true){
+                 console.log("in");
+                 alert("gogolle");
+             }
+         }   
+          
+          
+
 </script>
 </head>
+<body>
     <div id ="container">
 
         <div id="backGrid">
-            <table>
-                <tr>
-                    <td id="case1"></td>
-                </tr>
+            
+                <div>
+                    <input type="button" id="case" name="case1" onclick="test()">
+                    <input type="button" id="case">
+                    <input type="button" id="case">
+                </div>
 
-            </table>
+        <div>
+            <input type="button" id="case">
+            <input type="button" id="case">
+            <input type="button" id="case">
+        </div>
+
+        <div>
+            <input type="button" id="case">
+            <input type="button" id="case">
+            <input type="button" id="case"> 
+        </div>
+                
+                
+        
+            
+
+            
 
             </div>
         
         </div>
 
     </div>
+
+</body>
 
 </html>
