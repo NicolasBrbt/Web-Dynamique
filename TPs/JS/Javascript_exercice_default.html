@@ -1,15 +1,77 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> 
+<!DOCTYPE HTML> 
 <html> 
 	<head>
 		<title>Ecriture d'une fonction simple</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 		<script type="text/javascript">
-			// <!-- 
-			// -->
+		
+			
+			function cercle(){
+				var  pi=3.14;
+				var rayon=0;
+				rayon =prompt("Quel est le rayon ? ");
+				alert("La superficie vaut " + rayon*rayon*pi);
+				alert("Le périmètre vaut "+2*rayon*pi);
+			}
+
+			function multiplication(){
+				var firsnumber = parseInt(document.getElementById("firsNumber").value);
+				console.log(firsnumber);
+				var secondnumber = parseInt(document.getElementById("secondNumber").value);
+				console.log(secondnumber);
+				var result = document.getElementById("result");
+				console.log(result);
+				result.innerHTML = firsnumber * secondnumber;
+
+			}
+
+			function divide(){
+				var firsnumber = parseInt(document.getElementById("firsNumber").value);
+				console.log(firsnumber);
+				var secondnumber = parseInt(document.getElementById("secondNumber").value);
+				console.log(secondnumber);
+				var result = document.getElementById("result");
+				console.log(result);
+				result.innerHTML = firsnumber / secondnumber ; 
+
+			}
+
+			function addition(x){
+				return x + 2 ;
+			}
+
+			var tab = new Array();
+			tab[0]= -2
+			tab[1]= 1
+			tab[2]= 4
+			
+
+			function affiche(){
+				for(var i=0; i< tab.length;i++){
+					console.log(addition(tab[i]));
+				}
+			}
+
 		</script> 
 	</head> 
 	<body> 
+		1er numéro <input type="text" id="firsNumber"/>
+		<br> <br>
+		2e numéro <input type="text" id="secondNumber"/>
+		<br> <br>
+		<input type="button" onclick="multiplication()" value="Multiplier"/>
+		<input type="button" onclick="divide()" value="Diviser"/>
+		<br>
+		<p>
+			Le resulat est :
+			<br>
+			<span id="result"></span>
+		</p>
+		
+
 		<h1>Ecriture d'une fonction simple</h1>
-		<p>Cliquez sur le bouton pour lancer la fonction : <button onclick="">Lancer la fonction</button> </p> 
-	</body> 
+		<p>Cliquez sur le bouton pour lancer la fonction : <button onclick="cercle()">Lancer la fonction</button> </p> 
+		<p>Cliquez sur le bouton pour lancer la fonction : <button onclick="affiche()">Lancer la fonction</button> </p> 
+				
+	</body>
+
 </html>

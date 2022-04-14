@@ -1,0 +1,81 @@
+<!DOCTYPE HTML> 
+<html> 
+	<head>
+		<title>TP3</title>
+		<script type="text/javascript">
+
+            function Addition(){
+                var first = parseInt(document.getElementById("firstNumber").value);
+                var second = parseInt(document.getElementById("secondNumber").value);
+                var result = document.getElementById("result");
+                result.innerHTML= first +" + "+ second + " = "+ first + second; 
+                console.log(result);
+            }
+            function Soustraction(){
+                var first = parseInt(document.getElementById("firstNumber").value);
+                var second = parseInt(document.getElementById("secondNumber").value);
+                var result = document.getElementById("result");
+                result.innerHTML= first +" - "+ second + " = "+ (first - second); 
+                console.log(result);
+            }
+
+            function Multiplication(){
+                var first = parseInt(document.getElementById("firstNumber").value);
+                var second = parseInt(document.getElementById("secondNumber").value);
+                var result = document.getElementById("result");
+                result.innerHTML= first +" * "+ second + " = "+ first * second;
+                console.log(result);
+            }
+
+            function Division(){
+                var first = parseInt(document.getElementById("firstNumber").value);
+                var second = parseInt(document.getElementById("secondNumber").value);
+                var result = document.getElementById("result");
+                result.innerHTML= first +" / "+ second + " = "+ first / second;
+                
+                console.log(result);
+            }
+
+            function nom(){
+            var name=prompt("Entrez un nom SVP");
+            if(name==null){
+                alert("L'utilisateur a annulé l'invite");
+            }else
+                alert("Bonjour "+name);
+            }
+
+
+</script>
+    </head>
+
+    <body>
+        <h1>Calcul de base</h1>
+
+        <form>
+            <label>1er Numéro :</label>
+            <input type="text" id="firstNumber">
+            <br>
+            <br>
+            <label>2e Numéro :</label><input type="text" id="secondNumber">
+            <br> <br>
+            <input type="button" onclick="Addition()" value="Ajouter">
+            <input type="button" onclick="Soustraction()" value="Soustraire">
+            <input type="button" onclick="Multiplication()" value="Multiplier">
+            <input type="button" onclick="Division()" value="Diviser">
+        </form>
+        <br>
+        <br>
+        <p>
+            Le resultat est :
+            <span id="result"></span>
+        </p>
+
+    <br>
+    <br>
+    <p>Cliquez sur le bouton pour lancer la fonction</p>
+    <input type="button" onclick="nom()" value="Cliquez-moi">
+    </body>
+
+</html>
+    
+
