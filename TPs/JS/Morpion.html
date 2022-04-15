@@ -4,52 +4,89 @@
 <head>
     <title>TP3</title>
     <link href="Morpion.css" rel="stylesheet" />
-    
+
 </head>
 
 
+
 <body>
-    
+
     <div id="container">
 
         <div id="backGrid">
 
             <div>
-                <button id="test"></button>
-                <script type="text/javascript">
-    
-                    document.getElementById("test").addEventListener("click",test());
-                    function test(){
-                        alert("gogolle");
+                <input type="button" id="case1" onclick="test2(event);"></button>
+                <input type="button" id="case2" onclick="test2(event);"></button>
+                <input type="button" id="case3" onclick="test2(event);"></button>
+            </div>
+
+            <div>
+                <input type="button" id="case4" onclick="test2(event);"></button>
+                <input type="button" id="case5" onclick="test2(event);"></button>
+                <input type="button" id="case6" onclick="test2(event);"></button>
+            </div>
+
+            <div>
+                <input type="button" id="case7" onclick="test2(event);"></button>
+                <input type="button" id="case8" onclick="test2(event);"></button>
+                <input type="button" id="case9" onclick="test2(event);"></button>
+            </div>
+
+
+
+
+
+            <script type="text/javascript">
+                var pions = document.querySelectorAll('input[type="button"]');
+
+                function test2(event) {
+                    var joueur = 1;
+                    var isend = 0;
+                    var couleur = [0,0,0,0,0,0,0,0,0];
+
+                    while (!isend) {
+                        joueur = 1;
+                        if (joueur == 1) {
+                            alert("hello");
+                            for (var i = 0; i < pions.length; i++) {
+                                console.log(event.target.id + "event.id");
+                                console.log(pions[i].id + "ID");
+                                if (event.target.id == pions[i].id) {
+                                    alert("blue");
+                                    pions[i].style.backgroundColor = "blue";
+                                    alert("colored in blue");
+                                    joueur = 1;
+                                }
+                            }
+                        }
+                        if(joueur==2){
+                            for (var i = 0; i < pions.length; i++) {
+                                console.log(event.target.id + "event.id");
+                                console.log(pions[i].id + "ID");
+                                if (event.target.id == pions[i].id) {
+                                    pions[i].style.backgroundColor = "black";
+                                    joueur = 2;
+                                }
+                            }
+                        }
+                        isend=1;
+
                     }
-                </script>
-                <button id="case1"></button>
-                <button id="case1"></button>
-            </div>
-
-            <div>
-                <button id="case1"></button>
-                <button id="case1"></button>
-                <button id="case1"></button>
-            </div>
-
-            <div>
-                <button id="case1"></button>
-                <button id="case1"></button>
-                <button id="case1"></button>
-            </div>
 
 
 
 
 
+                }
 
+            </script>
 
         </div>
 
     </div>
 
-    
+
 
 </body>
 

@@ -11,9 +11,10 @@
 
 }
 
-button{
+input[type="button"]{
     width: 223px;
     height: 223px;
+    display: block;
     background-color: antiquewhite;
     float: left;
     margin: 2px;
