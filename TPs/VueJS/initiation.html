@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="HTF-8">
+    <title>Initiation au VueJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+
+</body>
+
+<div id="exemple-mustache">
+    <h1>{{titrePrincipal}}</h1>
+</div>
+
+<div id="element-directive">
+    <h2 v-bind:title="message">Rendu declaratif</h2>
+</div>
+
+<div id="exemple-dombinding">
+    <h3 v-if="visible">un titre optionnel</h3>
+</div>
+
+<div id="exemple-loop">
+    <ol>
+        <li v-for="chapitre in chapitres">
+            {{chapitre.titre}}
+        </li>
+    </ol>
+</div>
+
+<div id="exemple-event">
+    <p>{{message}}</p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+
+<div id="exemple-twoWayBinding">
+    <p>{{message}}</p>
+    <input v-model="message" />
+</div>
+
+<div id="exemple-component">
+    <ol>
+        <chapitres v-for="chapitre in chapitres" v-bind:chapitre="chapitre" v-bind:key="chapitre.id"></chapitres>
+    </ol>
+</div>
+
+</body>
+
+<script>
+
+    var mustache = new Vue({
+        el: '#exemple-mustache',
+        data: {
+            titrePrincipal: 'Cours de web dynamique - VueJS'
+        }
+    })
+
+    var directive = new Vue({
+        el: '#element-directive',
+        data: {
+            message: 'Vous avez chargé cette page le ' + new Date().toLocaleDateString()
+        }
+    })
+
+    var dombinding = new Vue({
+        el: '#exemple-dombinding',
+        data: {
+            visible: true
+        }
+    })
+
+    var loop = new Vue({
+        el: '#exemple-loop',
+        data: {
+            chapitres: [
+                { titre: "rendu déclaratif" },
+                { titre: "Conditions et boucles" }
+            ]
+        }
+    })
+
+    var event = new Vue({
+
+        el: '#exemple-event',
+        data: {
+            message: "il faut cliquer pour m'inverser"
+        },
+        methods: {
+            reverseMessage: function () {
+                this.message = this.message.split(' ').reverse().join(' ')
+            }
+
+        }
+    })
+
+    var twoWayBinding = new Vue({
+        el: '#exemple-twoWayBinding',
+        data: {
+            message: "lien bidirectionnel entre ce formulaire et 'l'état de l'application"
+        }
+    })
+
+    Vue.component('chapitres', {
+        props: ['chapitre'],
+        template: `<li>{{chapitre.titre}}</li>`
+    })  
+    
+    var component = new Vue({
+        el:'#exemple-component',
+        data: {
+            chapitres: [
+                {id:0, titre: "Gestion des entrées"},
+                {id: 1, titre: "Composant"}
+            ]
+        }
+    })
+</script>
+
+
+</html>
