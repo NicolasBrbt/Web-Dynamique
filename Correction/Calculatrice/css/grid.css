@@ -1,0 +1,16 @@
+/*
+On définit ici le style concernant le container flexbox et ses items.
+Voir : https://css-tricks.com/snippets/css/complete-guide-grid/
+box-sizing: border-box indique que les propriétés width et height sont mesurées en incluant le remplissage et les bordures.
+*/
+.container{
+	display:grid;
+	grid-template-columns:25% 25% 25% 25%;
+	grid-template-rows:50px 50px 50px 50px;
+	flex-wrap:wrap;
+}
+.item {
+	padding:5px;
+	text-align: center;
+    box-sizing: border-box;
+}

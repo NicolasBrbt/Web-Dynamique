@@ -1,0 +1,85 @@
+/*
+On définit ici la taille et le positionnement de l'interface de la calculatrice.
+box-sizing: border-box indique que les propriétés width et height sont mesurées en incluant le remplissage et les bordures.
+*/
+
+.frame {
+    width: 25%;
+    margin-right: 37.5%;
+    margin-left: 37.5%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/*
+On définit ici le style commun aux zones de texte result et errorMessage.
+resize: none empêche la modification de la taille de la zone de texte.
+pointer-events: none empêche les évènements liés au pointeur de la souris (les actions utilisateurs).
+Pour faire le même effet que pointer-events la valeur readonly aurait pu être ajouté aux zones de texte :
+<textarea readonly></textarea>
+*/
+
+#result,
+#errorMessage {
+    width: 100%;
+    height: 50px;
+    resize: none;
+    pointer-events: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+/*
+On définit ici le style concernant la zone de texte de résultat.
+box-sizing: border-box indique que les propriétés width et height sont mesurées en incluant le remplissage et les bordures.
+*/
+
+#result {
+    margin-bottom: 5px;
+    background-color: rgb(240, 240, 240);
+    text-align: right;
+}
+
+
+/*
+On définit ici le style concernant la zone de texte des messages d'erreur.
+*/
+
+#errorMessage {
+    margin-top: 5px;
+    color: red;
+    visibility: hidden;
+}
+
+
+/*
+On définit ici le style des boutons qui constituent le clavier de la calculatrice.
+transition:0.5s correspond à la vitesse d'animation du changement de valeur des propriétés de style.
+*/
+
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    transition: 0.5s;
+    background-color: lightgrey;
+    border: none;
+}
+
+
+/*
+On définit ici un style au survol de l'élément cible.
+La vitesse de changement de ces valeurs va être impactée par la propriété transition.
+*/
+
+input[type="button"]:hover {
+    background-color: darkgrey;
+}
+
+h1 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}

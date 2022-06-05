@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/table.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- 
+            async signifie ici que le script pourra être exécuter de façon asynchrone, donc dès qu'il sera disponible.
+            Cela permet de ne pas bloquer le reste des resources et d'avoir le même comportement que si on mettait le script en fin de document.
+        -->
+    <script type="text/javascript" src="js/table-component.js" async></script>
+</head>
+
+<body>
+    <div id="app-calculatrice">
+        <section id="calculatrice" class="frame">
+            <header>
+                <h1>Calculatrice</h1>
+            </header>
+            <article>
+                <div name="calculatrice">
+                    <textarea id="result" name="result"></textarea>
+                    <keyboard v-bind:row1="row1" v-bind:row2="row2" v-bind:row3="row3" v-bind:row4="row4"></keyboard>
+                    <textarea id="errorMessage" name="errorMessage"></textarea>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+
+</html>

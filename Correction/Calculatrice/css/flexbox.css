@@ -1,0 +1,17 @@
+/*
+On définit ici le style concernant le container flexbox et ses items.
+Voir : https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+box-sizing: border-box indique que les propriétés width et height sont mesurées en incluant le remplissage et les bordures.
+*/
+.container{
+	display:flex;
+	flex-wrap:wrap;
+}
+.item {
+	width: 25%;
+	height: 50px;	
+	padding: 5px;
+
+	text-align: center;
+    box-sizing: border-box;
+}
